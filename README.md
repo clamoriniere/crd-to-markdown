@@ -21,8 +21,7 @@ Usage of ./crd-to-markdown:
 example:
 
 ```console
-$ ./crd-to-markdown ./crd-to-markdown -f ~/dev/datadog-operator/pkg/apis/datadoghq/v1alpha1/datadogagent_types.go -r DatadogAgent
-...
+$ ./crd-to-markdown -f ~/datadog-operator/api/v1alpha1/datadogagent_types.go -n DatadogAgent
 ```
 
 result: https://gist.github.com/clamoriniere/f543ea634d04d74455bc2afb8efca7a4
