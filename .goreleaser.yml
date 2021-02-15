@@ -14,7 +14,9 @@ builds:
       - windows
       - darwin
 archives:
-  - replacements:
+  - name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}{{ .Arm }}"
+    format: binary
+    replacements:
       darwin: Darwin
       linux: Linux
       windows: Windows
