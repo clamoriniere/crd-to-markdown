@@ -135,7 +135,7 @@ func printAPIDocs(conf *Config) error {
 	for _, t := range types {
 		strukt := t[0]
 		if len(t) > 1 {
-			fmt.Printf("\n## %s\n\n%s\n\n", strukt.Name, strukt.Doc)
+			fmt.Printf("\n#### %s\n\n%s\n\n", strukt.Name, strukt.Doc)
 
 			fmt.Println("| Field | Description | Scheme | Required |")
 			fmt.Println("| ----- | ----------- | ------ | -------- |")
@@ -144,7 +144,7 @@ func printAPIDocs(conf *Config) error {
 				fmt.Println("|", f.Name, "|", f.Doc, "|", f.Type, "|", f.Mandatory, "|")
 			}
 			fmt.Println("")
-			fmt.Println("[Back to TOC](#table-of-contents)")
+			fmt.Println("[Back to Custom Resources](#custom-resources)")
 		}
 	}
 
