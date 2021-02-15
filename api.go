@@ -69,8 +69,7 @@ func toSectionLink(name string) string {
 }
 
 func printTOC(conf *Config, types []KubeTypes) {
-	fmt.Printf("\n## Table of Contents\n")
-
+	//fmt.Printf("\n## Table of Contents\n"
 	fmt.Printf("\n### Custom Resources\n\n")
 	printTypesTOC(types, conf.CRDNames.Find)
 
